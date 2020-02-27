@@ -1,0 +1,53 @@
+{
+  "name": "experiment2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.1.0",
+    "@types/node": "^12.12.28",
+    "@types/react": "^16.9.22",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-scripts": "3.4.0",
+    "typescript": "^3.7.5",
+    "pixi.js": "5.0.4",
+    "react-pixi-fiber": "0.13.2"
+  },
+  "devDependencies": {
+    "canvas": "^2.3.1",
+    "pixi.js-legacy": "^5.0.4",
+    "jest-environment-jsdom-fourteen": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jest-environment-jsdom-fourteen",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --env=jest-environment-jsdom-fourteen",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "pixi.js$": "pixi.js-legacy"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
