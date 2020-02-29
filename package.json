@@ -1,37 +1,36 @@
 {
-  "name": "experiment2",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-pixi-fiber-ts-jest",
+  "version": "1.0.0",
+  "description": "Working jest tests!",
+  "keywords": [],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.1.0",
-    "@types/node": "^12.12.28",
     "@types/react": "^16.9.22",
     "@types/react-dom": "^16.9.5",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "3.4.0",
     "typescript": "^3.7.5",
-    "pixi.js": "5.0.4",
+    "pixi.js": "5.2.1",
     "react-pixi-fiber": "0.13.2"
   },
   "devDependencies": {
     "canvas": "^2.3.1",
-    "pixi.js-legacy": "^5.0.4",
-    "jest-environment-jsdom-fourteen": "^1.0.1"
+    "pixi.js-legacy": "^5.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jest-environment-jsdom-fourteen",
-    "test:debug": "react-scripts --inspect-brk test --runInBand --env=jest-environment-jsdom-fourteen",
     "eject": "react-scripts eject"
   },
   "jest": {
     "moduleNameMapper": {
-      "pixi.js$": "pixi.js-legacy"
+      "pixi.js$": "<rootDir>/pixi.js",
+      "pixi.js-stable$": "<rootDir>/node_modules/pixi.js"
     }
   },
   "eslintConfig": {
